@@ -1,0 +1,18 @@
+tool目录下的是代码生成器
+使用方法为
+	./transport h instructions 
+该命令生成头文件
+
+	./transport c instructions
+该命令生成指令集c语言文件
+
+	./transport a instructions
+该命令生成汇编器c语言文件
+
+同时
+	gcc main.c instructions.c asm.c
+编译得到一个简单的汇编器,其中instructions.c asm.c是上面的命令
+生成的指令集c语言文件和汇编器c语言文件
+
+TODO:
+实现读取operations文件的AVR模拟器的生成器。

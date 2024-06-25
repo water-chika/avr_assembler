@@ -1,0 +1,6 @@
+SREG: status_register:SREG carry_flag:C zero_flag:Z negative_flag:N two_complement_overflow_flag:V sign_flag:S half_carry_flag:H transfer_bit:T global_interrupt_enable_bit:I
+Operands: register_destination:Rd register_source:Rr result:R constant_data:K constant_address:k bit_position:b bit_position_in_sreg:s indirect_address_register_x:X indirect_address_register_y:Y indirect_address_register_z:Z io_memory_address:A displacement:q
+MemorySpace: data_space:DS program_space:PS io_space:I_O io_bit_space:I_O_b register_bit_space:Rd
+Operator: mul_uu:*uu mul_ss:*ss mul_su:*su add:+ sub:- and:& or:| xor:^ shr:>> shl:<< cmp:== assign:<- swap:<-> not:!
+Stack: stack:STACK stack_pointer:SP
+Flags: affect:<=> clear:0 set:1 not_affect:-
